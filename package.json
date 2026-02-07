@@ -1,0 +1,74 @@
+{
+  "name": "readme-combiner",
+  "displayName": "README Combiner",
+  "description": "Combine all README files in your project into a single file",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "readme",
+    "markdown",
+    "combine",
+    "merge",
+    "documentation"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/readme-combiner"
+  },
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "readme-combiner.combine",
+        "title": "Combine All README Files"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "readme-combiner.combine",
+          "group": "2_workspace"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "readme-combiner.combine"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "README Combiner",
+      "properties": {
+        "readme-combiner.outputFileName": {
+          "type": "string",
+          "default": "allreadme.txt",
+          "description": "Name of the output file"
+        },
+        "readme-combiner.filePattern": {
+          "type": "string",
+          "default": "**/README.md",
+          "description": "Glob pattern to match README files"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "16.x",
+    "eslint": "^8.41.0",
+    "typescript": "^5.1.3"
+  }
+}
