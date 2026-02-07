@@ -2,7 +2,7 @@
   "name": "readme-combiner",
   "displayName": "README Combiner",
   "description": "Combine all README files in your project into a single file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "artenisalija",
   "engines": {
     "vscode": "^1.80.0"
