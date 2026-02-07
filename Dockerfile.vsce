@@ -1,0 +1,18 @@
+FROM node:20-alpine
+
+RUN npm install -g @vscode/vsce
+
+WORKDIR /extension
+
+# Install deps first for better caching
+COPY package*.json ./
+RUN npm install
+
+# Copy the rest of the extension
+COPY . .
+
+# Build if TypeScript is used
+RUN npm run build || true
+
+# Package the extension
+CMD vsce package --out /output

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  vsce-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile.vsce
+    volumes:
+      - .:/extension
+      - ./output:/output
+    working_dir: /extension
