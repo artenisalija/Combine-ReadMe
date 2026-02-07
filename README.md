@@ -71,11 +71,6 @@ FOLDER: /path/to/project/day-1
 3. Search for "README Combiner"
 4. Click Install
 
-### Manual Installation (for development)
-1. Clone this repository
-2. Run `npm install` in the extension directory
-3. Press F5 to open a new VS Code window with the extension loaded
-
 ## VS Code Marketplace
 
 [Readme Combiner](https://marketplace.visualstudio.com/manage/publishers/artenisalija/extensions/readme-combiner/hub?_a=acquisition)
