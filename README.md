@@ -76,41 +76,10 @@ FOLDER: /path/to/project/day-1
 2. Run `npm install` in the extension directory
 3. Press F5 to open a new VS Code window with the extension loaded
 
-## Publishing to VS Code Marketplace
+## VS Code Marketplace
 
-Follow these steps to publish:
+[Readme Combiner](https://marketplace.visualstudio.com/manage/publishers/artenisalija/extensions/readme-combiner/hub?_a=acquisition)
 
-1. **Create a Publisher Account**
-   - Go to https://marketplace.visualstudio.com/manage
-   - Create a publisher account
-
-2. **Install vsce**
-   ```bash
-   npm install -g @vscode/vsce
-   ```
-
-3. **Package the Extension**
-   ```bash
-   vsce package
-   ```
-
-4. **Publish the Extension**
-   ```bash
-   vsce publish
-   ```
-
-## Known Issues
-
-- Large projects with many README files may take a few seconds to process
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of README Combiner
-- Combine all README files into one
-- Configurable output file name
-- Configurable file pattern matching
 
 ## Contributing
 
